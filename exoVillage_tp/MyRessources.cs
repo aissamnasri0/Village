@@ -1,11 +1,11 @@
-public class Ressources
+public class MyRessources
 {
     private int woods { get; set; }
     private int stones { get; set; }
     private int level { get; set; }
     private int woord_max { get; set; }
     private int woord_min { get; set; }
-    public Ressources()
+    public MyRessources()
     {
         this.woods = 10;
         this.stones = 10;
