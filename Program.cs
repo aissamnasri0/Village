@@ -11,6 +11,6 @@ Console.WriteLine(myVillage.listHouse.Length); // affiche 3
 Console.WriteLine(myVillage.villageoise); // affiche 30
 myVillage.cutWord(15);
 myVillage.mineStone(15); // affiche Il n'y a pas assez de ressources
-Console.WriteLine(myVillage.getWood()); // affiche 187
+Console.WriteLine(myVillage.getWood()) ;// affiche 187
 Console.WriteLine(myVillage.getStone()); // affiche 10
 myVillage.buildHouse(4); // affiche Il n'y a pas assez de ressources

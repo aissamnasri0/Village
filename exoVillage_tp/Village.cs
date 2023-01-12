@@ -17,58 +17,58 @@ public class Village
         listHouse = new[] { chefHome };
         mine = new Mine();
         forest = new Forest();
-        bool boucle = true;
-        while (boucle)
-        {
-            System.Console.WriteLine("entrer le numero de methode :");
-            System.Console.WriteLine("1- getwood 2- getstone 3- addhouse "
-            + "4- mineStone 5- cutWood 6- buildHouse 7- upgradeRessource 8- upgradeMine 9- quiter");
-            int res = int.Parse(Console.ReadLine());
-            if (res >= 1 && res <= 9)
-            {
-                switch (res)
-                {
-                    case 1:
-                        System.Console.WriteLine(getWood());
-                        break;
-                    case 2:
-                        System.Console.WriteLine(getStone());
-                        break;
-                    case 3:
-                        addHouse();
-                        break;
-                    case 4:
-                        System.Console.WriteLine("entrer le nombre de vilaggeois : ");
-                        int nbr = int.Parse(Console.ReadLine());
-                        mineStone(nbr);
-                        break;
-                    case 5:
-                        System.Console.WriteLine("entrer le nombre de vilaggeois : ");
-                        int nbr1 = int.Parse(Console.ReadLine());
-                        cutWord(nbr1);
-                        break;
-                    case 6:
-                        System.Console.WriteLine("entrer le nombre : ");
-                        int nbr3 = int.Parse(Console.ReadLine());
-                        buildHouse(nbr3);
-                        break;
-                    case 7:
-                        upgradeRessource();
-                        break;
-                    case 8:
-                        upgradeMine();
-                        break;
-                    case 9:
-                        boucle = false;
-                        break;
+        // bool boucle = true;
+        // while (boucle)
+        // {
+        //     System.Console.WriteLine("entrer le numero de methode :");
+        //     System.Console.WriteLine("1- getwood 2- getstone 3- addhouse "
+        //     + "4- mineStone 5- cutWood 6- buildHouse 7- upgradeRessource 8- upgradeMine 9- quiter");
+        //     int res = int.Parse(Console.ReadLine());
+        //     if (res >= 1 && res <= 9)
+        //     {
+        //         switch (res)
+        //         {
+        //             case 1:
+        //                 System.Console.WriteLine(getWood());
+        //                 break;
+        //             case 2:
+        //                 System.Console.WriteLine(getStone());
+        //                 break;
+        //             case 3:
+        //                 addHouse();
+        //                 break;
+        //             case 4:
+        //                 System.Console.WriteLine("entrer le nombre de vilaggeois : ");
+        //                 int nbr = int.Parse(Console.ReadLine());
+        //                 mineStone(nbr);
+        //                 break;
+        //             case 5:
+        //                 System.Console.WriteLine("entrer le nombre de vilaggeois : ");
+        //                 int nbr1 = int.Parse(Console.ReadLine());
+        //                 cutWord(nbr1);
+        //                 break;
+        //             case 6:
+        //                 System.Console.WriteLine("entrer le nombre : ");
+        //                 int nbr3 = int.Parse(Console.ReadLine());
+        //                 buildHouse(nbr3);
+        //                 break;
+        //             case 7:
+        //                 upgradeRessource();
+        //                 break;
+        //             case 8:
+        //                 upgradeMine();
+        //                 break;
+        //             case 9:
+        //                 boucle = false;
+        //                 break;
 
-                }
-            }
-            else
-            {
-                System.Console.WriteLine("invalid option");
-            }
-        }
+        //         }
+        //     }
+        //     else
+        //     {
+        //         System.Console.WriteLine("invalid option");
+        //     }
+        // }
 
 
 
@@ -111,10 +111,10 @@ public class Village
         }
         else
         {
-            myRessources.useStones(nbrVillagois * Mine.stone_cost * mine.getLevel());
-            myRessources.useWoods(nbrVillagois * Mine.wood_cost * mine.getLevel());
+            myRessources.useStones(nbrVillagois * Mine.stone_cost * mine.getLevel() * 10);
+            myRessources.useWoods(nbrVillagois * Mine.wood_cost * mine.getLevel() * 10);
 
-            myRessources.addStone(nbrVillagois*(Mine.stone_cost));
+            myRessources.addStone(mine.mineStone(nbrVillagois));
         }
     }
     public void cutWord(int nbrVillagois)
@@ -132,7 +132,7 @@ public class Village
         {
             myRessources.useStones(nbrVillagois * Forest.stone_cost * forest.getLevel() * 10);
             myRessources.useWoods(nbrVillagois * Forest.wood_cost * forest.getLevel() * 10);
-            myRessources.addStone(nbrVillagois*(Forest.stone_cost));
+            myRessources.addStone(forest.cutWood(nbrVillagois));
         }
 
     }
