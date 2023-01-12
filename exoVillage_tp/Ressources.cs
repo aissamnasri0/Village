@@ -2,14 +2,17 @@ public class Ressources
 {
     private int woods { get; set; }
     private int stones { get; set; }
-    public Ressources(){
+    public Ressources()
+    {
         this.woods = 10;
         this.stones = 10;
     }
-    public int getWood(){
+    public int getWood()
+    {
         return this.woods;
     }
-    public int getStone(){
+    public int getStone()
+    {
         return this.stones;
     }
     public void userStones(int nbr)

@@ -3,15 +3,16 @@ public class Village
     private string name { get; }
     private Ressources myRessources;
     public House chefHome;
-    public int villageoise=0;
+    public int villageoise = 0;
     public House[] listHouse;
     public string getName() { return name; }
+
     public Village(string name)
     {
         this.name = name;
         myRessources = new Ressources();
         chefHome = new House();
-        listHouse =  new []{chefHome};
+        listHouse = new[] { chefHome };
         this.villageoise = House.villageois;
     }
     public int getWood()
@@ -22,13 +23,22 @@ public class Village
     {
         return myRessources.getStone();
     }
-    public void addHouse(){
-      House house = new House();
-    for(int i=0; i<listHouse.Length+1; i++){
-        if(listHouse.Length+1==i){
-            listHouse[i] = house;
+    public void addHouse()
+    {
+        House house = new House();
+        if (listHouse == null)
+        {
+            listHouse = new[] { house };
         }
-    }
+        else
+        {
+            House[] newHouse = new House[listHouse.Length + 1];
+            listHouse.CopyTo(newHouse, 0);
+            newHouse[listHouse.Length] = house;
+            listHouse = newHouse;
+
+        }
+
     }
 
 }
