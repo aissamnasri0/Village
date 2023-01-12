@@ -3,7 +3,7 @@ public class Village
     private string name { get; }
     private Ressources myRessources;
     public House chefHome;
-    public int villageoise = 0;
+    public int villageoise {get{return House.villageois*listHouse.Length;}}
     public House[] listHouse;
     public string getName() { return name; }
 
@@ -13,7 +13,7 @@ public class Village
         myRessources = new Ressources();
         chefHome = new House();
         listHouse = new[] { chefHome };
-        this.villageoise = House.villageois;
+        //this.villageoise = House.villageois;
     }
     public int getWood()
     {
@@ -23,7 +23,7 @@ public class Village
     {
         return myRessources.getStone();
     }
-    public void addHouse()
+    private void addHouse()
     {
         House house = new House();
         if (listHouse == null)

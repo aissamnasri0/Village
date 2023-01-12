@@ -10,7 +10,7 @@
 Village myVillage = new Village("Victor le createur");
 System.Console.WriteLine(myVillage.getName()); // affichera Victor le createur
 Console.WriteLine(myVillage.listHouse.Length);
-myVillage.addHouse();
-myVillage.addHouse();
+//myVillage.addHouse();
+//myVillage.addHouse();
 Console.WriteLine(myVillage.listHouse.Length);
-Console.WriteLine(myVillage.villageoise);  
+Console.WriteLine(myVillage.villageoise);
