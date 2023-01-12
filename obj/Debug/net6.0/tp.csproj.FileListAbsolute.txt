@@ -1,0 +1,15 @@
+C:\Users\Administrateur\Desktop\formation\tp\bin\Debug\net6.0\tp.exe
+C:\Users\Administrateur\Desktop\formation\tp\bin\Debug\net6.0\tp.deps.json
+C:\Users\Administrateur\Desktop\formation\tp\bin\Debug\net6.0\tp.runtimeconfig.json
+C:\Users\Administrateur\Desktop\formation\tp\bin\Debug\net6.0\tp.dll
+C:\Users\Administrateur\Desktop\formation\tp\bin\Debug\net6.0\tp.pdb
+C:\Users\Administrateur\Desktop\formation\tp\obj\Debug\net6.0\tp.csproj.AssemblyReference.cache
+C:\Users\Administrateur\Desktop\formation\tp\obj\Debug\net6.0\tp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrateur\Desktop\formation\tp\obj\Debug\net6.0\tp.AssemblyInfoInputs.cache
+C:\Users\Administrateur\Desktop\formation\tp\obj\Debug\net6.0\tp.AssemblyInfo.cs
+C:\Users\Administrateur\Desktop\formation\tp\obj\Debug\net6.0\tp.csproj.CoreCompileInputs.cache
+C:\Users\Administrateur\Desktop\formation\tp\obj\Debug\net6.0\tp.dll
+C:\Users\Administrateur\Desktop\formation\tp\obj\Debug\net6.0\refint\tp.dll
+C:\Users\Administrateur\Desktop\formation\tp\obj\Debug\net6.0\tp.pdb
+C:\Users\Administrateur\Desktop\formation\tp\obj\Debug\net6.0\tp.genruntimeconfig.cache
+C:\Users\Administrateur\Desktop\formation\tp\obj\Debug\net6.0\ref\tp.dll
