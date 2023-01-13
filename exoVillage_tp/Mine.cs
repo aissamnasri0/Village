@@ -14,7 +14,7 @@ public class Mine
     }
     public int getLevel()
     {
-        return level * 10;
+        return level ;
     }
     public void upgrade()
     {
